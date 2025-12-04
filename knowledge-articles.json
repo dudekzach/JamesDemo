@@ -1,0 +1,77 @@
+{
+  "version": 2,
+  "documents": [
+    {
+      "published": {
+        "title": "How do Virtual Agents work?",
+        "category": { "name": "AI Automation" },
+        "labels": [ { "name": "Virtual Agent" } ],
+        "visible": true,
+        "variations": [
+          {
+            "body": {
+              "blocks": [
+                {
+                  "type": "Paragraph",
+                  "paragraph": {
+                    "blocks": [
+                      { "type": "Text", "text": { "text": "Virtual Agents leverage conversational AI to resolve customer queries without human intervention, delivering instant 24/7 support and freeing agents for higher value interactions." } }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "published": {
+        "title": "Getting started with Agent Copilot",
+        "category": { "name": "AI Agent Assist" },
+        "labels": [ { "name": "Agent Copilot" } ],
+        "visible": true,
+        "variations": [
+          {
+            "body": {
+              "blocks": [
+                {
+                  "type": "Paragraph",
+                  "paragraph": {
+                    "blocks": [
+                      { "type": "Text", "text": { "text": "Genesys Agent Copilot guides agents in real time with next-best actions, policy reminders, and context from prior interactions, enhancing both speed and quality of customer service." } }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "published": {
+        "title": "What is Predictive Routing?",
+        "category": { "name": "AI Routing" },
+        "labels": [ { "name": "Predictive Routing" } ],
+        "visible": true,
+        "variations": [
+          {
+            "body": {
+              "blocks": [
+                {
+                  "type": "Paragraph",
+                  "paragraph": {
+                    "blocks": [
+                      { "type": "Text", "text": { "text": "Predictive Routing uses AI to analyze customer data and route each contact to the best agent, maximizing first contact resolution, customer satisfaction, and operational efficiency." } }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

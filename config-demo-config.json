@@ -1,0 +1,17 @@
+{
+  "id": "JamesDemo",
+  "customerName": "Lumen",
+  "productName": "Lumen AI Experience",
+  "industry": "IT Services/Telecom",
+  "primaryPersona": "Digital CX Leader",
+  "secondaryPersonas": [],
+  "theme": {
+    "brandColor": "#1a73e8",
+    "brandColorDark": "#185abc",
+    "logo": "lumen-logo.png"
+  },
+  "messenger": {
+    "deploymentId": "0230bda4-3870-4f29-802e-c9103ca090d0",
+    "environment": "prod"
+  }
+}

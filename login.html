@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumen – Demo Login</title>
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <main class="app-main app-page-transition">
+    <section class="app-card" style="max-width: 380px; margin: 120px auto;">
+      <h2>Sign in to Lumen AI Experience</h2>
+      <p class="app-muted">Explore Lumen’s next-gen digital engagement—powered by Genesys Cloud AI.</p>
+      <input type="email" placeholder="Work email" style="width:100%; box-sizing:border-box; padding:10px 12px; margin:8px 0; border-radius:8px; border:1px solid #ccc;" />
+      <input type="password" placeholder="Password" style="width:100%; box-sizing:border-box; padding:10px 12px; margin:8px 0; border-radius:8px; border:1px solid #ccc;" />
+      <button class="app-btn-primary" style="width:100%; margin-top:8px;">Sign in</button>
+      <p class="app-muted" style="font-size:0.8rem; margin-top:10px;">Demo only – any credentials will proceed.</p>
+    </section>
+  </main>
+  <!-- Messenger snippet -->
+  <script type="text/javascript" charset="utf-8">
+    (function (g, e, n, es, ys) {
+      g['_genesysJs'] = e;
+      g[e] = g[e] || function () { (g[e].q = g[e].q || []).push(arguments) };
+      g[e].t = 1 * new Date();
+      g[e].c = es;
+      ys = document.createElement('script'); ys.async = 1; ys.src = n;
+      ys.charset = 'utf-8'; document.head.appendChild(ys);
+    })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
+      environment: 'prod',
+      deploymentId: '0230bda4-3870-4f29-802e-c9103ca090d0'
+    });
+  </script>
+</body>
+</html>

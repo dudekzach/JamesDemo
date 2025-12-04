@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    { "title": "Review Virtual Agent analytics", "status": "open" },
+    { "title": "Check Copilot suggestions log", "status": "completed" },
+    { "title": "Analyze Predictive Routing impact", "status": "open" }
+  ],
+  "clients": [
+    { "name": "Enterprise Telecom Customer", "segment": "Enterprise" }
+  ],
+  "documents": [
+    { "title": "Virtual Agent Use Cases", "id": "doc1" },
+    { "title": "Agent Copilot Playbook", "id": "doc2" },
+    { "title": "Predictive Routing ROI", "id": "doc3" }
+  ],
+  "invoices": [
+    { "invoiceNumber": "AI-2301", "amount": 14230, "month": "March 2024" },
+    { "invoiceNumber": "AI-2300", "amount": 13760, "month": "Feb 2024" }
+  ],
+  "insights": [
+    { "metric": "Virtual Agent Containment Rate", "value": "85%" },
+    { "metric": "Copilot Actions/Session", "value": "17" },
+    { "metric": "AHT Improvement (Predictive Routing)", "value": "13%" }
+  ],
+  "knowledgeArticles": [
+    { "title": "How do Virtual Agents work?", "id": "ka1" },
+    { "title": "Getting started with Agent Copilot", "id": "ka2" },
+    { "title": "What is Predictive Routing?", "id": "ka3" }
+  ]
+}

@@ -1,0 +1,11 @@
+:root {
+  --brand-primary: #1a73e8;
+  --brand-primary-dark: #185abc;
+  --bg-light: #f4f6fb;
+  --card-bg: #ffffff;
+  --border-radius: 12px;
+  --text-main: #222d3b;
+  --text-muted: #6b7a90;
+  --border-subtle: #e2e8f0;
+}
+/* ... (truncated for brevity, see previous) ... */
