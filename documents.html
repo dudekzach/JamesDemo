@@ -1,1 +1,60 @@
-<!-- ...content as above... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lumen – Documents</title>
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <main class="app-main app-page-transition">
+    <section class="app-layout-2col">
+      <aside class="app-card">
+        <h3>Document Library</h3>
+        <ul style="list-style:none; padding-left:0; margin:0;">
+          <li><a href="#" onclick="selectDoc('Virtual Agent Use Cases', 'virtual-agent')">Virtual Agent Use Cases</a></li>
+          <li><a href="#" onclick="selectDoc('Agent Copilot Playbook', 'agent-copilot')">Agent Copilot Playbook</a></li>
+          <li><a href="#" onclick="selectDoc('Predictive Routing ROI', 'predictive-routing')">Predictive Routing ROI</a></li>
+        </ul>
+      </aside>
+      <section class="app-card">
+        <h3 id="docTitle">Select a document</h3>
+        <p class="app-muted">Browse sample Lumen AI enablement resources.</p>
+        <div id="docContent">
+          <p>Choose a document to view a sample excerpt and AI-generated summary.</p>
+        </div>
+        <div id="aiSummary" style="margin-top:16px; padding:10px 12px; border-radius:8px; background:#f5faff; border:1px solid #bee3f8; display:none;">
+          <h4>AI Summary</h4>
+          <p id="aiSummaryBody"></p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script>
+    function selectDoc(title, key) {
+      document.getElementById("docTitle").textContent = title;
+      let sampleText = {
+        'virtual-agent': "Explore how Lumen’s Virtual Agents resolve customer queries 24/7 and drive digital containment.",
+        'agent-copilot': "Best practices for using Genesys Agent Copilot to accelerate onboarding and assist agents in real time.",
+        'predictive-routing': "ROI analysis of Predictive Routing, matching customers to the right agent every time."
+      };
+      document.getElementById("docContent").innerHTML = "<p>" + (sampleText[key] || "Sample excerpt for " + title + ".") + "</p>";
+      document.getElementById("aiSummary").style.display = "block";
+      document.getElementById("aiSummaryBody").textContent = "AI-generated summary for " + title + " will appear here.";
+    }
+  </script>
+  <script type="text/javascript" charset="utf-8">
+    (function (g, e, n, es, ys) {
+      g['_genesysJs'] = e;
+      g[e] = g[e] || function () { (g[e].q = g[e].q || []).push(arguments) };
+      g[e].t = 1 * new Date();
+      g[e].c = es;
+      ys = document.createElement('script'); ys.async = 1; ys.src = n;
+      ys.charset = 'utf-8'; document.head.appendChild(ys);
+    })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
+      environment: 'prod',
+      deploymentId: '0230bda4-3870-4f29-802e-c9103ca090d0'
+    });
+  </script>
+</body>
+</html>
