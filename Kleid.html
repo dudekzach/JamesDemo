@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Surgery Partners – Revenue Operations Portal</title>
+  <link rel="stylesheet" href="theme.css" />
+  <style>
+    /* Inline critical CSS from Knowledge Pack for demo */
+    :root {
+      --brand-primary: #d64001;
+      --brand-primary-dark: #b83500;
+      --bg-light: #f4f4f6;
+      --card-bg: #ffffff;
+      --border-radius: 12px;
+      --text-main: #2d2d2d;
+      --text-muted: #666666;
+      --border-subtle: #e2e2e2;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-main);
+    }
+    .app-header {
+      background-color: var(--brand-primary);
+      color: #fff;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+    .app-logo {
+      height: 44px;
+      width: auto;
+      display: block;
+    }
+    .app-nav {
+      background-color: #fff;
+      border-bottom: 1px solid var(--border-subtle);
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+    .app-nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      padding: 8px 24px;
+      gap: 16px;
+      align-items: center;
+    }
+    .app-nav-link {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+    .app-nav-link:hover {
+      background-color: #f0f0f0;
+    }
+    .app-nav-active {
+      background-color: var(--brand-primary);
+      color: #fff;
+    }
+    .app-nav-right {
+      margin-left: auto;
+    }
+    .app-main {
+      max-width: 1100px;
+      margin: 140px auto 24px;
+      padding: 0 16px;
+    }
+    .app-card {
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      padding: 18px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border: 1px solid #f0f0f0;
+      margin-bottom: 18px;
+    }
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .app-btn-primary {
+      border: none;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      background-color: var(--brand-primary);
+      color: #fff;
+    }
+    .app-btn-primary:hover {
+      background-color: var(--brand-primary-dark);
+    }
+    .app-muted {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+    @media (max-width: 768px) {
+      .app-main { margin-top: 100px; }
+      .app-nav-inner { padding: 8px 8px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Shared header -->
+  <header class="app-header">
+    <div style="font-weight:600; font-size:1.15rem;">
+      Surgery Partners Revenue Operations Center
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="app-nav">
+    <div class="app-nav-inner">
+      <a href="dashboard.html" class="app-nav-link app-nav-active" id="navDashboard">Dashboard</a>
+      <a href="#" class="app-nav-link" id="navResearch">Research</a>
+      <a href="#" class="app-nav-link" id="navDocuments">Documents</a>
+      <a href="#" class="app-nav-link" id="navBilling">Billing</a>
+      <a href="#" class="app-nav-link app-nav-right">Logout</a>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="app-main app-page-transition">
+    <section class="app-card" style="margin-bottom:24px;">
+      <h2>Welcome, Revenue Cycle Team</h2>
+      <p class="app-muted" style="margin-bottom: 10px;">
+        Modernizing how Surgery Partners’ business office and care teams manage patient engagement, payments, and operations across 60+ centers nationwide.
+      </p>
+    </section>
+
+    <div class="app-grid">
+      <!-- Challenge 1: Patient Payment Notification & Communication -->
+      <section class="app-card">
+        <h3 style="margin-top:0;">Patient Payment Notifications</h3>
+        <ul>
+          <li>Automate patient pre-surgery payment reminders and notifications</li>
+          <li>Track and visualize all outreach (phone, mail, digital coming soon)</li>
+          <li>Instantly see which patients still owe a balance before surgery</li>
+        </ul>
+        <p class="app-muted">
+          Upfront payment collection is critical: post-surgery collections cost more and success rates drop sharply.
+        </p>
+      </section>
+
+      <!-- Challenge 2: Quality Management & Reporting -->
+      <section class="app-card">
+        <h3 style="margin-top:0;">Quality & Operations Insights</h3>
+        <ul>
+          <li>Monitor interaction and outreach volume in real time</li>
+          <li>See which regions or centers struggle most with patient contact</li>
+          <li>Enable call recording, auditing, and agent coaching</li>
+          <li>Track key KPIs: response rates, wait times, payment rates</li>
+        </ul>
+        <p class="app-muted">
+          Remove the "black hole" – give managers the visibility and tools to coach and optimize team performance.
+        </p>
+      </section>
+
+      <!-- Challenge 3: Future-Proof, Scalable Engagement -->
+      <section class="app-card">
+        <h3 style="margin-top:0;">Future-Proof Patient Engagement</h3>
+        <ul>
+          <li>Move from voice-only to integrated digital channels (SMS, chat, email)</li>
+          <li>Skill-based and language-based routing for more personalized care</li>
+          <li>Seamless escalation to supervisors and centralized follow-up</li>
+        </ul>
+        <p class="app-muted">
+          Designed to scale as Surgery Partners grows and consolidates more centers into the central business office.
+        </p>
+      </section>
+    </div>
+
+    <section class="app-card" style="margin-top:32px;">
+      <h3 style="margin-top:0;">Monthly Performance Snapshot</h3>
+      <div class="app-grid">
+        <div>
+          <strong>60</strong><br /><span class="app-muted">Centers on Platform</span>
+        </div>
+        <div>
+          <strong>30</strong><br /><span class="app-muted">Patient Reps</span>
+        </div>
+        <div>
+          <strong>~900</strong><br /><span class="app-muted">Daily Patient Interactions</span>
+        </div>
+        <div>
+          <strong>8–10%</strong><br /><span class="app-muted">Revenue from Patients</span>
+        </div>
+        <div>
+          <strong>~$3.1B</strong><br /><span class="app-muted">Annual Revenue</span>
+        </div>
+      </div>
+      <p class="app-muted" style="margin-top:16px;">
+        <em>Track payments, monitor staff productivity, and proactively manage operational goals – all in one place.</em>
+      </p>
+    </section>
+
+    <section class="app-card" style="margin-top:32px;">
+      <h3>Quick Actions</h3>
+      <button class="app-btn-primary" style="margin-right:12px;">View Outstanding Payments</button>
+      <button class="app-btn-primary" style="margin-right:12px;">Review Call Quality</button>
+      <button class="app-btn-primary">Operational Analytics</button>
+    </section>
+
+    <section class="app-muted" style="margin:24px 0 0 0; text-align:center;">
+      &copy; 2025 Surgery Partners | Demo Portal. For demonstration purposes only.
+    </section>
+  </main>
+
+  <!-- Messenger snippet omitted as requested -->
+
+</body>
+</html>
